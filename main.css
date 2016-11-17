@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	min-height: 400px;
+	background-color: black;
+}
+
+footer {
+	position: fixed;
+	display: flex;
+	flex: 1;
+	flex-shrink: 0;
+	bottom: 0;
+    width: 100%;
+	padding: 15px;
+	background-color: white;
+	clear: both;
+}
+
+html {
+	width: 100%;
+}
+
+.section1 {
+	flex: 2;
+	background-color: rgba(20,20,20,0.7);
+	border-radius: 5px;
+	max-width: 40%;
+	margin-right: 10%;
+	margin-left: auto;
+	padding: 5px;
+}
+
+.contentti {
+	max-width: 400px;
+	z-index: 1000;
+}
+
+.section2 {
+	flex: 2;
+	background-color: rgba(20,20,20,0.7);
+	border-radius: 5px;
+	max-width: 40%;
+	margin-right: auto;
+	padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+	.section2{
+		padding: 5px;
+		margin: 3px;
+		max-width: 100%;
+		margin-right: 10px;
+		flex: 2;
+	}
+	.section1{
+		padding: 5px;
+		margin: 3px;
+		max-width: 100%;
+		flex: 2;
+	}
+	.content {
+		flex-direction: row; 
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.content {
+		flex-direction: column; 
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #fce300;
+}
+
+.otsikko {
+	margin-left: 30%;
+	margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	margin-left: 5px;
+	position: absolute;
+	font-size: 20px;
+}
+
+#indexDiv {
+	background-image: url("dyn.jpg");
+	background-size: cover;
+	width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    overflow: auto;
+}
+
+#holder {
+	background-image: url("ddos.png");
+	background-size: cover;
+	width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    overflow: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#ylaosa {
+	display: flex;
+}
+
+#logo {
+	margin-left: auto;
+	margin-bottom: 5px;
+ 	margin-right: auto;
+ 	margin-top: 10px;
+ 	width: 51%;
+}
+
+.textContent {
+	color: white;
+}
+
+.box {
+	border: 3px solid white;
+	padding: 16px;
+	margin-top: 16px;
+}
+
+
+
+#header {
+	margin: 0px;
+	top: 0px;
+	flex: 1;
+	flex-direction: row;
+	border-left: 0px;
+	max-height: 24px;
+	max-width: 100%;
+	align-content: center;
+}
+
+.headerDiv {
+	display: flex;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: 3px solid white;
+    cursor: pointer;
+    flex: 2;
+}
+
+button:focus {
+	outline: 0;
+}
+
+#otherBody {
+	background-image: url("tausta.jpg");
+	background-size: cover;
+	width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    overflow: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.show {
+	display:block;
+	z-index: 1000;
+}
+
+.napit {
+	display: flex;
+}
+
+.noLang {
+	display: none;
+}
+
+#footerB {
+	max-width: 20%;
+	float: right;
+}
+
+.selected {
+	text-decoration: underline;
+}
+
+#historyMain {
+	background-image: url("server.jpg");
+	background-size: cover;
+	width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    overflow: auto;
+}
