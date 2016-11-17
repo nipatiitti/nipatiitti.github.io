@@ -11,7 +11,7 @@ window.onload = function showPopUp() {
     if (!visited) {
       alert("You are going to get few alerts now. Pls read them carefully");
       alert("Use chrome or firefox to show this site. DO NOT USE INTERNET EXPLORER");
-      alert("This site is optimized for halfscreen");
+      alert("This site is optimized for halfscreen and mobile");
       alert("Oh and this site uses your sessionStorage (Not cookies) so you don't see these alert more than 1 time per session");
       alert("To show these again close and open this tab again");
       alert("Thank you for your attention co-operating :D");
