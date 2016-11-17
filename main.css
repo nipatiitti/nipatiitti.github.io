@@ -103,6 +103,7 @@ a:hover {
     height: 100%; 
     position: fixed; 
     overflow: auto;
+    overflow-x: hidden;
 }
 
 #holder {
@@ -112,6 +113,7 @@ a:hover {
     height: 100%; 
     position: fixed; 
     overflow: auto;
+    overflow-x: hidden;
 }
 
 img {
@@ -179,6 +181,7 @@ button:focus {
     height: 100%; 
     position: fixed; 
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .dropdown {
@@ -234,6 +237,7 @@ button:focus {
     height: 100%; 
     position: fixed; 
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .extra {
