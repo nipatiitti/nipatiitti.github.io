@@ -22,10 +22,10 @@ window.onload = function showPopUp() {
         kaanto();
     }
     if (layoutEngine.vendor === 'ie' && layoutEngine.version === 11){
-        document.getElementById("IE10").classList.toggle("show");
+        document.getElementById("IE10").classList.toggle("paalle");
     }
     if (layoutEngine.vendor === 'ie' && layoutEngine.version === 10){
-        document.getElementById("IE10").classList.toggle("show");
+        document.getElementById("IE10").classList.toggle("paalle");
     }
 }
 
