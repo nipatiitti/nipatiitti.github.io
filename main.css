@@ -96,6 +96,10 @@ a:hover {
 	font-size: 20px;
 }
 
+#IE10 {
+ 	display: none;
+}
+
 #indexDiv {
 	background-image: url("dyn.jpg");
 	background-size: cover;
