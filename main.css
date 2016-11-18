@@ -250,6 +250,10 @@ button:focus {
 	bottom: 0px;
 }
 
-.paalle {
-	display: inline;
+#IE10 {
+	display: none;
+}
+
+html.ie10 #IE10{
+    display: inline;
 }
