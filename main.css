@@ -249,3 +249,7 @@ button:focus {
 	width: 1px;
 	bottom: 0px;
 }
+
+.paalle {
+	display: inline;
+}
