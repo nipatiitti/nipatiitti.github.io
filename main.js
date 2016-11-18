@@ -6,13 +6,6 @@ var en = true;
 var fin = false;
 var lang = sessionStorage.getItem('lang');
 
-if (Function('/*@cc_on return document.documentMode===10@*/')()){
-    document.getElementById("IE10").classList.toggle("show");
-}
-if (Function('/*@cc_on return document.documentMode===11@*/')()){
-    document.getElementById("IE10").classList.toggle("show");
-}
-
 window.onload = function showPopUp() {
     var visited = sessionStorage.getItem('visited');
     if (!visited) {
@@ -27,6 +20,12 @@ window.onload = function showPopUp() {
     }
     if (lang == fin) {
         kaanto();
+    }
+    if (Function('/*@cc_on return document.documentMode===10@*/')()){
+    document.getElementById("IE10").classList.toggle("show");
+    }
+    if (Function('/*@cc_on return document.documentMode===11@*/')()){
+        document.getElementById("IE10").classList.toggle("show");
     }
 }
 
