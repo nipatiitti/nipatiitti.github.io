@@ -21,7 +21,7 @@ window.onload = function showPopUp() {
     if (lang == fin) {
         kaanto();
     }
-    if (Function('/*@cc_on return document.documentMode===10@*/')()){
+    if ("onpropertychange" in document && !!window.matchMedia){
     document.getElementById("IE10").classList.toggle("show");
     }
     if (Function('/*@cc_on return document.documentMode===11@*/')()){
