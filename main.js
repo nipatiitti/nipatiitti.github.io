@@ -14,17 +14,13 @@ window.onload = function showPopUp() {
       alert("This site is optimized for halfscreen and mobile");
       alert("Oh and this site uses your sessionStorage (Not cookies) so you don't see these alert more than 1 time per session");
       alert("To show these again close and open this tab again");
-      alert("Thank you for your attention co-operating :D");
+      alert("Thank you for your attention and co-operating :D");
       sessionStorage.setItem('visited', true);
       sessionStorage.setItem('lang', true);
     }
     if (lang == fin) {
         kaanto();
     }
-}
-
-window.onbeforeunload = function kieliTest() {
-    sessionStorage.setItem('kieli', en)
 }
 
 function kaanto(){
@@ -61,10 +57,10 @@ window.onclick = function(event) {
 
 function langToggle() {
     kaanto();
-    if (lang != en) {
-        sessionStorage.setItem('kieli', true);
-    }
-    else {
+    if (lang == en) {
         sessionStorage.setItem('kieli', false);
+    }
+    else if (lang == fin) {
+        sessionStorage.setItem('kieli', true);
     }
 }
