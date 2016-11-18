@@ -63,10 +63,10 @@ window.onclick = function(event) {
 
 function langToggle() {
     kaanto();
-    if (lang == en) {
+    if (lang === en) {
         sessionStorage.setItem('kieli', false);
     }
-    else if (lang == fin) {
+    else if (lang === fin) {
         sessionStorage.setItem('kieli', true);
     }
 }
