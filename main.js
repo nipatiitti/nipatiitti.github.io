@@ -22,6 +22,7 @@ window.onload = function showPopUp() {
          if (n == true) {
           var ode = confirm("Would you like to use cookies in this site? Don't worry we will use them anyway");
           if (ode== true) {
+            alert("Some background photos are quite big so just pls give them some time to load :(")
             lastOne = confirm("Thanks for your co-operating you are free to enter now!");
           }
          }
@@ -100,7 +101,7 @@ function getCookie(cname) {
     return "";
 }
 
-function checkCookie() {
+function checkCookie(cname) {
     var valinta = getCookie("kielenValinta");
     if (valinta == "fin") {
       setCookie(lang, en, 365);
