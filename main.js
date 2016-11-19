@@ -18,6 +18,9 @@ window.onload = function showPopUp() {
          } else {
             var n = confirm("Pls get better browser like chrome");
          }
+         if (n == true) {
+          lastOne = true;
+         }
       } 
       localStorage.setItem('visited', true);
       }
@@ -37,7 +40,6 @@ window.onload = function showPopUp() {
              }
           }
           if (ode== true) {
-            alert("Some background photos are quite big so pls just give them some time to load :(")
             lastOne = confirm("Thanks for your co-operating you are free to enter now!");
           }
           sessionStorage.setItem('sessionOn', true);
