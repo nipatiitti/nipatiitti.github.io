@@ -18,7 +18,12 @@ window.onload = function showPopUp() {
          } else {
             var n = confirm("Pls get better browser like chrome");
          }
-         if (n == true) {
+      } 
+      localStorage.setItem('visited', true);
+      }
+    }
+    var sessionOn = sessionStorage.getItem('sessionOn');
+    if (getCookie("kielenValinta")==false && !sessionOn) {
           ode = confirm("Would you like to use cookies in this site?");
           if (ode == true) {
             alert("Thank you! We use them to remember your language selection. It will stay same for a year");
@@ -35,10 +40,7 @@ window.onload = function showPopUp() {
             alert("Some background photos are quite big so pls just give them some time to load :(")
             lastOne = confirm("Thanks for your co-operating you are free to enter now!");
           }
-         }
-      } 
-      localStorage.setItem('visited', true);
-      }
+          sessionStorage.setItem('sessionOn', true);
     }
 }
 
