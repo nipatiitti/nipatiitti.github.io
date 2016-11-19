@@ -1,10 +1,12 @@
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-    alert(getCookie("kielenValinta"));
 }
 
+var ode = false;
+var checki = false;
+
 window.onload = function showPopUp() {
-    var visited = sessionStorage.getItem('visited');
+    var visited = localStorage.getItem('visited');
     if (!visited) {
       var lastOne = false;
       while (lastOne == false) {
@@ -17,14 +19,25 @@ window.onload = function showPopUp() {
             var n = confirm("Pls get better browser like chrome");
          }
          if (n == true) {
-          var ode = confirm("Would you like to use cookies in this site? Don't worry we will use them anyway");
+          ode = confirm("Would you like to use cookies in this site?");
+          if (ode == true) {
+            alert("Thank you! We use them to remember your language selection. It will stay same for a year");
+              checki = true;
+          }
+          if (ode == false) {
+            var cok = confirm("Are you sure? we use them to remember your language selection. Nothing else OK = you are sure");
+             if (cok == true) {
+                alert("okay :(")
+                ode = true;
+             }
+          }
           if (ode== true) {
             alert("Some background photos are quite big so pls just give them some time to load :(")
             lastOne = confirm("Thanks for your co-operating you are free to enter now!");
           }
          }
       } 
-      sessionStorage.setItem('visited', true);
+      localStorage.setItem('visited', true);
       }
     }
 }
@@ -105,7 +118,7 @@ function checkCookie() {
       setCookie("kielenValinta", "en", 365, "nipatiitti.tk");
     } else  if (valinta == "en"){
       setCookie("kielenValinta", "fin", 365, "nipatiitti.tk");
-    } else {
+    } else if (checki == true){
       setCookie("kielenValinta", "en", 365, "nipatiitti.tk");
     }
 }
