@@ -19,7 +19,7 @@ window.onload = function showPopUp() {
          if (n == true) {
           var ode = confirm("Would you like to use cookies in this site? Don't worry we will use them anyway");
           if (ode== true) {
-            alert("Some background photos are quite big so just pls give them some time to load :(")
+            alert("Some background photos are quite big so pls just give them some time to load :(")
             lastOne = confirm("Thanks for your co-operating you are free to enter now!");
           }
          }
