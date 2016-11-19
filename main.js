@@ -3,10 +3,6 @@ function myFunction() {
     alert(getCookie("kielenValinta"));
 }
 
-var en = true;
-var fin = false;
-var lang = localStorage.getItem('lang');
-
 window.onload = function showPopUp() {
     var visited = sessionStorage.getItem('visited');
     if (!visited) {
