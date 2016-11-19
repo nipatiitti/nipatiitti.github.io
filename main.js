@@ -37,11 +37,12 @@ window.onload = function showPopUp() {
               checkCookie();
           }
           if (ode == false) {
-            var cok = confirm("Are you sure? we use them to remember your language selection. Nothing else OK = you are sure");
+            var cok = confirm("Are you sure? we use them to remember your language selection. Nothing else. \n OK = you are sure");
              if (cok == true) {
                 alert("okay :(")
                 secondLast = true;
              }
+             else {}
           }
           if (seconLast == true) {
             lastOne = confirm("Thanks for your co-operating you are free to enter now!");
