@@ -44,7 +44,7 @@ window.onload = function showPopUp() {
              }
              else {}
           }
-          if (seconLast == true) {
+          if (secondLast == true) {
             lastOne = confirm("Thanks for your co-operating you are free to enter now!");
           }
         }
