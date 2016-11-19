@@ -27,22 +27,26 @@ window.onload = function showPopUp() {
     }
     var sessionOn = sessionStorage.getItem('sessionOn');
     if (getCookie("kielenValinta")==false && !sessionOn) {
+        while (secondLast == false) {
           ode = confirm("Would you like to use cookies in this site?");
           if (ode == true) {
             alert("Thank you! We use them to remember your language selection. It will stay same for a year");
               checki = true;
+              secondLast = true;
+              checkCookie();
           }
           if (ode == false) {
             var cok = confirm("Are you sure? we use them to remember your language selection. Nothing else OK = you are sure");
              if (cok == true) {
                 alert("okay :(")
-                ode = true;
+                secondLast = true;
              }
           }
-          if (ode== true) {
+          if (seconLast == true) {
             lastOne = confirm("Thanks for your co-operating you are free to enter now!");
           }
-          sessionStorage.setItem('sessionOn', true);
+        }
+       sessionStorage.setItem('sessionOn', true);
     }
 }
 
