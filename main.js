@@ -4,6 +4,7 @@ function myFunction() {
 
 var ode = false;
 var checki = false;
+var secondLast = false;
 
 window.onload = function showPopUp() {
     var visited = localStorage.getItem('visited');
