@@ -102,10 +102,10 @@ function getCookie(cname) {
 function checkCookie() {
     var valinta = getCookie("kielenValinta");
     if (valinta == "fin") {
-      setCookie(kielenValinta, en, 365, nipatiitti.tk);
+      setCookie(kielenValinta, "en", 365, nipatiitti.tk);
     } else  if (valinta == "en"){
-      setCookie(kielenValinta, fin, 365, nipatiitti.tk);
+      setCookie(kielenValinta, "fin", 365, nipatiitti.tk);
     } else {
-      setCookie("kielenValinta", en, 365, nipatiitti.tk);
+      setCookie("kielenValinta", "en", 365, nipatiitti.tk);
     }
 }
