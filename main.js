@@ -99,12 +99,12 @@ function getCookie(cname) {
     return "";
 }
 
-function checkCookie(cname) {
+function checkCookie() {
     var valinta = getCookie("kielenValinta");
     if (valinta == "fin") {
-      setCookie(lang, en, 365, nipatiitti.tk);
+      setCookie(kielenValinta, en, 365, nipatiitti.tk);
     } else  if (valinta == "en"){
-      setCookie(lang, fin, 365, nipatiitti.tk);
+      setCookie(kielenValinta, fin, 365, nipatiitti.tk);
     } else {
       setCookie("kielenValinta", en, 365, nipatiitti.tk);
     }
