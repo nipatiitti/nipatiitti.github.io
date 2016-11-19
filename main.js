@@ -9,30 +9,34 @@ var lang = localStorage.getItem('lang');
 window.onload = function showPopUp() {
     var visited = sessionStorage.getItem('visited');
     if (!visited) {
-      alert("You are going to get few alerts now. Pls read them carefully");
-      if (!document.all) {
-        alert('Good job you are not using internet explorer. Lucky for you');
-      }
-      alert("This site is optimized for halfscreen and mobile");
-      alert("Oh and this site uses your sessionStorage (Not cookies) so you don't see these alert more than 1 time per session");
-      alert("To show these again close and open this tab again");
-      alert("Thank you for your attention and co-operating :D");
+      var lastOne = false;
+      while (lastOne == false) {
+      var r = confirm("You are going to get few alerts now. Pls read them carefully. If you press 'Stop reseiving messages from this site' this site won't function at all");
+      if (r == true) {
+         if (!document.all) {
+            var n = confirm("Good job your browser is <" + layoutEngine.browser + "> not a IE");
+            alert("(We didn't guess that! There is actually pretty complex function that checks your browser type)")
+         } else {
+            var n = confirm("Pls get better browser like chrome");
+         }
+         if (n == true) {
+          var ode = confirm("Would you like to use cookies in this site? Don't worry we will use them anyway");
+          if (ode== true) {
+            lastOne = confirm("Thanks for your co-operating you are free to enter now!");
+          }
+         }
+      } 
       sessionStorage.setItem('visited', true);
-      localStorage.setItem('lang', true);
+      }
     }
 }
 
 function check() {
-    if (document.all === true) {
-        alert('We strongly recommend using good browser like google chrome instead of this shitty one');
-      }
-    if (!lang) {
-        kaanto();
+    var valinta = getCookie("kielenValinta");
+    if (valinta == "fin") {
+      kaanto();
     }
     if (Function('/*@cc_on return document.documentMode===10@*/')()){
-        document.documentElement.className+=' ie10';
-    }
-    if (Function('/*@cc_on return document.documentMode===11@*/')()){
         document.documentElement.className+=' ie10';
     }
 }
@@ -71,10 +75,38 @@ window.onclick = function(event) {
 
 function langToggle() {
     kaanto();
-    if (!lang) {
-        localStorage.setItem('kieli', true);
+    checkCookie();
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
     }
-    else {
-        localStorage.setItem('kieli', false);
+    return "";
+}
+
+function checkCookie() {
+    var valinta = getCookie("kielenValinta");
+    if (valinta == "fin") {
+      setCookie(lang, en, 365);
+    } else  if (valinta == "en"){
+      setCookie(lang, fin, 365);
+    } else {
+      setCookie("kielenValinta", en, 365);
     }
 }
