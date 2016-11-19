@@ -1,5 +1,6 @@
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
+    alert(getCookie("kielenValinta"));
 }
 
 var en = true;
@@ -79,11 +80,12 @@ function langToggle() {
     checkCookie();
 }
 
-function setCookie(cname, cvalue, exdays) {
+function setCookie(cname, cvalue, exdays, osoite) {
+    var domain_string = osoite ? ("; domain=" + osoite) : '' ;
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/" + domain_string;
 }
 
 function getCookie(cname) {
@@ -104,10 +106,10 @@ function getCookie(cname) {
 function checkCookie(cname) {
     var valinta = getCookie("kielenValinta");
     if (valinta == "fin") {
-      setCookie(lang, en, 365);
+      setCookie(lang, en, 365, nipatiitti.tk);
     } else  if (valinta == "en"){
-      setCookie(lang, fin, 365);
+      setCookie(lang, fin, 365, nipatiitti.tk);
     } else {
-      setCookie("kielenValinta", en, 365);
+      setCookie("kielenValinta", en, 365, nipatiitti.tk);
     }
 }
