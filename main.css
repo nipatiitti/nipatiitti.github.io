@@ -37,7 +37,7 @@ body {
 }
 
 #mainGrid {
-	flex: 9;
+	flex: 12;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -73,7 +73,7 @@ body {
 .fa {
 	margin: auto;
 	position: relative;
-	top: calc(50% - 18px);
+	top: 50%;
 }
 
 @media screen and (max-width: 500px) {
@@ -104,6 +104,6 @@ body {
 	}
 
 	.fa {
-		top: calc(50% - 6px);
+		top: 50%;
 	}
 }
