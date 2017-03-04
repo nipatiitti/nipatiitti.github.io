@@ -1,0 +1,99 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'ABeeZee';
+	color: #8c8c8c;
+	font-size: 4vw;
+	margin: 0px;
+	min-height: 100%;
+	background-image: none;
+}
+
+.wrapper2 {
+	display: flex;
+	flex-direction: column;
+}
+
+#iconGrid {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.grid2 .codeIcon {
+	margin-top: 10px;
+	font-size: 6vh;
+    flex: 1 0 25%;
+    text-align: center;
+}
+
+.codeIcon {
+	height: 10vw;
+	justify-content: center;
+	vertical-align: middle;
+	align-items: center;
+	border-radius: 10px;
+	background-image: radial-gradient(#CCC, #FFF), radial-gradient(#CCC, #FFF);
+	background-size:    2px 100%;
+	background-position: 100% 0;
+	background-repeat:  no-repeat;
+}
+
+i {
+	margin: auto;
+	position: relative;
+	top: calc(50% - 3vh);
+}
+
+.article {
+	text-align: justify;
+	margin: 3vw;
+	font-size: 3vh;
+}
+
+.article > h1 {
+	text-align: center;
+}
+
+.codeIcon:hover, .gitLink:hover, .back:hover {
+	color: black;
+	cursor: pointer;
+}
+
+.store {
+	height: 5vh;
+	flex: 1;
+}
+
+.iconWrap {
+	flex-direction: row;
+	margin: auto;
+	top: calc(50% - 5vh);
+}
+
+.playStoreReact {
+	height: 7vh;
+	margin-top: -1vh;
+}
+
+.articleWrap {
+	flex-direction: column-reverse;
+}
+
+.gitLink {
+	font-size: 7vh;
+	text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+	.grid2 .codeIcon {
+	    flex: 1 0 50%;
+	    margin-bottom: 1vh;
+	}
+
+	.iconWrap {
+		margin: 0px;
+	}
+}

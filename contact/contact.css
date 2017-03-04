@@ -1,0 +1,69 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'ABeeZee';
+	color: #8c8c8c;
+	font-size: 4vw;
+	margin: 0px;
+	min-height: 100%;
+	background-image: none;
+}
+
+.wrapper2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper3 {
+	display: flex;
+	flex-direction: row;
+}
+
+.article {
+	flex: 1;
+	text-align: justify;
+	margin: 3vw;
+	margin-top: 2vh;
+	font-size: 3.5vw;
+}
+
+.left {
+	font-weight: bold;
+	text-align: right;
+}
+
+.right {
+	text-align: left;
+}
+
+a {
+	color: #8c8c8c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px dashed #ccc;
+	background: #999;
+	margin: 0;
+	margin-top: 1vh;
+}
+
+hr.left {
+	border: 0;
+	border-bottom: none;
+	background: none;
+	margin: 0;
+	margin-top: 1vh;
+}
+
+.back:hover {
+	color: black;
+	cursor: pointer;
+}

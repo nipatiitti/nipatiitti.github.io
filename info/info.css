@@ -1,0 +1,33 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'ABeeZee';
+	color: #8c8c8c;
+	font-size: 4vw;
+	margin: 0px;
+	min-height: 100%;
+	background-image: none;
+}
+
+.wrapper2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.article {
+	text-align: justify;
+	margin: 3vw;
+	margin-top: 2vh;
+	font-size: 3vh;
+}
+
+.article > h3 {
+	text-align: center;
+}
+
+.back:hover {
+	color: black;
+	cursor: pointer;
+}
