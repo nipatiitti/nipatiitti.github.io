@@ -50,12 +50,12 @@ body {
 }
 
 .navItem {
+	position: relative;
 	justify-content: center;
 	align-items: center;
 	background-color: black;
 	opacity: 0.0;
 	border-radius: 10px;
-	overflow: hidden;
 	-webkit-transition: opacity .5s ease-in;
 	-moz-transition: opacity .5s ease-in;
 	-o-transition: opacity .5s ease-in;
@@ -74,8 +74,9 @@ body {
 .fa {
 	-webkit-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
-	position: relative;
+	position: absolute;
 	top: 50%;
+	left: 50%;
 }
 
 @media screen and (max-width: 500px) {

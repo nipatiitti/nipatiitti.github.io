@@ -29,6 +29,12 @@ body {
 	font-size: 3.5vw;
 }
 
+i.fa-long-arrow-left {
+	transform: none;
+	position: static;
+	top: 100%;
+}
+
 .left {
 	font-weight: bold;
 	text-align: right;
@@ -45,14 +51,6 @@ a {
 
 a:hover {
 	color: black;
-}
-
-hr {
-	border: 0;
-	border-bottom: 1px dashed #ccc;
-	background: #999;
-	margin: 0;
-	margin-top: 1vh;
 }
 
 hr.left {
