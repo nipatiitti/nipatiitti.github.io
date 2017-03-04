@@ -1,2 +1,2 @@
 # nipatiitti.github.io
-School project about Dyn Web services
+My own website that I use as kinda of CV
