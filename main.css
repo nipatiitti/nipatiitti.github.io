@@ -25,7 +25,7 @@ body {
 }
 
 .top {
-	flex: 1;
+	-webkit-flex:1 0 auto;
 }
 
 .wrapper {
@@ -88,10 +88,6 @@ body {
 		-moz-transition: none;
 		-o-transition: none;
 		transition: none;
-		-webkit-transform: none;
-		-moz-transform: none;
-		-o-transform: none;
-		transform: none;
 	}
 
     .grid .navItem {
@@ -105,10 +101,6 @@ body {
 		-moz-transition: none;
 		-o-transition: none;
 		transition: none;
-		-webkit-transform: none;
-		-moz-transform: none;
-		-o-transform: none;
-		transform: none;
 	}
 
 	.fa {
