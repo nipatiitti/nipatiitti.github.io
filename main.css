@@ -76,7 +76,7 @@ body {
 	top: calc(50% - 18px);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (width: 500px) {
     .grid {
     	margin-left: -10px;
   		margin-top: -10px;
