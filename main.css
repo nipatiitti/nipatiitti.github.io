@@ -55,6 +55,7 @@ body {
 	background-color: black;
 	opacity: 0.0;
 	border-radius: 10px;
+	overflow: hidden;
 	-webkit-transition: opacity .5s ease-in;
 	-moz-transition: opacity .5s ease-in;
 	-o-transition: opacity .5s ease-in;
@@ -79,7 +80,6 @@ body {
 
 @media screen and (max-width: 500px) {
     .grid {
-    	margin-left: -10px;
   		margin-top: -10px;
     }
 
@@ -92,7 +92,8 @@ body {
 	}
 
     .grid .navItem {
-	    flex: 1 0 calc(50% - 10px);
+	    flex: 1 0 calc(50% - 20px);
+	    margin-right: 10px;
 	    margin-left: 10px;
   		margin-top: 10px;
 	}
@@ -102,9 +103,5 @@ body {
 		-moz-transition: none;
 		-o-transition: none;
 		transition: none;
-	}
-
-	.fa {
-		top: 50%;
 	}
 }
