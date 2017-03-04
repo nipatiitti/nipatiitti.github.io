@@ -86,14 +86,3 @@ i {
 	font-size: 7vh;
 	text-align: center;
 }
-
-@media screen and (max-width: 500px) {
-	.grid2 .codeIcon {
-	    flex: 1 0 50%;
-	    margin-bottom: 1vh;
-	}
-
-	.iconWrap {
-		margin: 0px;
-	}
-}
